@@ -1,0 +1,19 @@
+A=1;
+N=6;
+C=9;
+for i=1:10;
+    Naglomerado(C)=N
+    N=2*N;
+    A=((2-sqrt(4-A^2)))^(1/2);
+    C=C+9;
+end 
+L=(N*A)/2
+U=L/(sqrt(((1-A^2)/2)))
+P=(U+L)/2
+j=[P P P P P P P P P P]
+E=(U-L)/2
+i=[E E E E E E E E E E]
+plot(Naglomerado,j)
+hold on 
+plot(Naglomerado,i)
+grid on
