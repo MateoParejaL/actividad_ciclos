@@ -1,0 +1,11 @@
+N=0;
+for N=[1:1:100];
+    y(N)=(N^2)
+    if sum(y)<=1000
+        N=(N+1)
+    else
+        break; 
+    end
+end
+sum(y)
+N
